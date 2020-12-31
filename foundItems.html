@@ -1,0 +1,11 @@
+<div class="row table-responsive">
+  <table class="table">
+    <tr>
+      <th>Name</th><th>Short Name</th><th>Description</th>
+    </tr>
+    <tr ng-repeat="item in found">
+      <td>{{ item.name }}</td><td>{{ item.short_name }}</td><td>{{ item.description }}</td>
+      <td><button class="btn btn-danger" ng-click="onRemove({index: $index});">Don't want this one!</button></td>
+    </tr>
+  </table>
+</div>
